@@ -1,3 +1,5 @@
+# Project 1 : Number Guessing Game
+
 import random
 
 correct_number = random.randint(1, 100)
