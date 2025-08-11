@@ -1,43 +1,50 @@
+# Project 3: Rock Paper Scissors Game
+
 import random
 
+choices = ["rock", "paper", "scissors"]
+mapping = {"r": "rock", "p": "paper", "s": "scissors"}
+
 def get_user_choice():
-    user_input = input("Rock, Paper or Scissor? (r/p/s): ").strip().lower()
-    mapping = {'r': 'rock', 'p': 'paper', 's': 'scissor'}
-    return mapping.get(user_input)
+    user_input = input("Rock, Paper, Scissors (r/p/s): ").lower()
+    if user_input not in mapping:
+        print("Enter a valid choice (r/p/s).")
+        return None
+    return mapping[user_input]
 
 def get_computer_choice():
-    return random.choice(["rock", "paper", "scissor"])
+    return random.choice(choices)
 
-def determine_winner(user, computer):
-    print(f"\nYou played: {user}")
-    print(f"Computer played: {computer}")
+def determine_winner(user_choice, computer_choice):
+    print(f"You chose: {user_choice}")
+    print(f"Computer chose: {computer_choice}")
     
-    if user == computer:
+    if user_choice == computer_choice:
         print("It's a tie!")
-    elif (user == "rock" and computer == "scissor") or \
-         (user == "paper" and computer == "rock") or \
-         (user == "scissor" and computer == "paper"):
-        print("🎉 You win!")
+    elif (user_choice == "rock" and computer_choice == "scissors") or \
+         (user_choice == "paper" and computer_choice == "rock") or \
+         (user_choice == "scissors" and computer_choice == "paper"):
+        print("You win!")
     else:
-        print("💻 Computer wins!")
+        print("Computer wins!")
 
 def main():
-    print("🎮 Welcome to Rock, Paper, Scissors!")
-
-    for i in range(1, 4):
-        print(f"\n🔁 Round {i}")
-        user_choice = get_user_choice()
-        if user_choice:
+    while True:
+        for i in range(1, 4):
+            print(f"\nRound {i}:")
+            user_choice = None
+            while user_choice is None:
+                user_choice = get_user_choice()
             computer_choice = get_computer_choice()
             determine_winner(user_choice, computer_choice)
-        else:
-            print("❌ Invalid input. Please enter r, p, or s.")
-
-    exit_choice = input("\nDo you want to play again? (y/n): ").strip().lower()
-    if exit_choice == 'y':
-        main()  # restart the game
-    else:
-        print("👋 Thank you for playing!")
+        
+        exit_choice = input("\nDo you want to continue? (y/n): ").lower()
+        if exit_choice == "n":
+            print("Thank you for playing!")
+            break
+        elif exit_choice != "y":
+            print("Invalid input. Exiting game.")
+            break
 
 if __name__ == "__main__":
     main()
