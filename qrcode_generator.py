@@ -1,3 +1,5 @@
+# Project 4: QR code generator
+
 import qrcode
 
 data = input("Enter the text / URL: ").strip()
