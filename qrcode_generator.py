@@ -1,4 +1,6 @@
-import qrcode
+# Project 4: QR code generator
+
+import qrcode # type: ignore
 
 data = input("Enter the text / URL: ").strip()
 filename = input("Enter the file name (without extension): ").strip()
