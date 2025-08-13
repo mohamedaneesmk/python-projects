@@ -1,6 +1,6 @@
 # Project : 5 Count Down timer Program 
 
-import time  # ✅ Added import
+import time  # ✅ Added import 
 
 my_time = int(input("Enter the number of seconds to pause: "))
 
