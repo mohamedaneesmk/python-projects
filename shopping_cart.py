@@ -1,4 +1,4 @@
-# Project 6: Shopping cart program
+# Project 12: Shopping cart program
 
 store = {
     "apple":40,

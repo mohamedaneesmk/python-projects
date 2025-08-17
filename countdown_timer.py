@@ -1,4 +1,4 @@
-# Project : 5 Count Down timer Program 
+# Project 3:  Count Down timer Program 
 
 import time  # ✅ Added import 
 

@@ -1,4 +1,4 @@
-# Project 1 : Number Guessing Game 
+# Project 8: Number Guessing Game 
 
 import random
 

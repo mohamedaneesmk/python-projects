@@ -1,4 +1,4 @@
-# Project 9 : Student Grade Manager 
+# Project 7: Student Grade Manager 
 
 student_details = {}  # declared globally to use in the full code
 

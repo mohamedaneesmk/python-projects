@@ -1,4 +1,4 @@
-# Project 7: Simple Quiz game
+# Project 10: Simple Quiz game
 
 questions = (
     "1. What is the result of print(10 % 3)?",

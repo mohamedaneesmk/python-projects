@@ -1,4 +1,4 @@
-# Project 3: Rock Paper Scissors Game
+# Project 11: Rock Paper Scissors Game
 
 import random
 

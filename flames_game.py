@@ -1,4 +1,4 @@
-# Project 10 : Flames Game 
+# Project 6: Flames Game 
 
 def flames_game(name1,name2):
     # Step 1: Clean names

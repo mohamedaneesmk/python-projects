@@ -1,4 +1,4 @@
-# Project 11 : Slot machine 
+# Project 13: Slot machine 
 
 import random
 

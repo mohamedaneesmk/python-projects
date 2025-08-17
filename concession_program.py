@@ -1,4 +1,4 @@
-# Project 8: Concession program using dictionary
+# Project 2: Concession program using dictionary
 
 menu = {
     "idly":10,

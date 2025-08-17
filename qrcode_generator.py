@@ -1,4 +1,4 @@
-# Project 4: QR code generator
+# Project 9: QR code generator
 
 import qrcode # type: ignore 
 

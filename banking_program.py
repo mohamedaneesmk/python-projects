@@ -1,4 +1,4 @@
-# Project : 4 Banking Program
+# Project 1 : Banking Program
 
 total_balance = 50000  # Shared global balance
 

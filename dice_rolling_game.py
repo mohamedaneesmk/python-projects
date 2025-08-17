@@ -1,4 +1,4 @@
-# Project 2: Dice Rolling Game in Python 
+# Project 4: Dice Rolling Game in Python 
 
 import random
 
