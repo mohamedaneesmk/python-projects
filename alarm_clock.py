@@ -2,7 +2,7 @@
 
 import time 
 import datetime
-import pygame 
+import pygame  # type: ignore
 
 def set_alarm(alarm):
     print(f"Alarm time has been set at {alarm}")
